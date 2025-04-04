@@ -13,7 +13,7 @@ SECRETS = load_dict_from_json(secrets_file)
 aws_access_key_id = SECRETS["aws_access_key_id"]
 aws_secret_access_key = SECRETS["aws_secret_access_key"]
 INFERENCE_PROFILE_ARN = SECRETS["INFERENCE_PROFILE_ARN"]
-REGION = SECRETS["REGION2"]
+REGION = SECRETS["REGION"]
 
 bedrock_runtime = boto3.client('bedrock-runtime', region_name=REGION,
                               aws_access_key_id=aws_access_key_id,
